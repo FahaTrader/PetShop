@@ -28,7 +28,7 @@
 
     /*----- Hero Section -----*/
     .bg{
-        min-height: 545px;
+        min-height: 500px;
     }
 
     .title-hero{
@@ -96,7 +96,7 @@
     /*----- Menu Section -----*/
     #menu .card{
         width: 300px;
-        height: 430px;
+        height: 400px;
         margin-top: 30px;
     }
     

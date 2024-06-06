@@ -133,9 +133,12 @@ function updateQuantity(name, delta) {
 function showMensagem(mensagem) {
     mensagemItem.textContent = mensagem;
     mensagemItem.style.display = "block";
+    $("#container-mensagem").addClass("animate__animated");
+    $("#container-mensagem").addClass("animate__fadeInDown");
     mensagemItem.style.opacity = 1;
 
-    setTimeout(function() {
+    setTimeout(function() { 
+        
         mensagemItem.style.display = "none";
     }, 2000);
 }
