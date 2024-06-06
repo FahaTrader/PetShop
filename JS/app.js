@@ -1,10 +1,12 @@
 const abrirCarrinho = document.getElementById("btn-carrinho");
+const bagModal = document.getElementById("bag-modal");
 const modalCarrinho = document.getElementById("modal");
 const fecharCarrinho = document.getElementById("btn-fechar");
 const menu = document.getElementById("menu");
 const cartItem = document.getElementById("body-modal");
 const valorTotal = document.getElementById("valor-total");
 const contadorItem = document.getElementById("contador");
+const contadorBag = document.getElementById("bag-contador");
 const mensagemItem = document.getElementById("container-mensagem");
 const productContainer = document.getElementById("product-container");
 const verMaisBtn = document.getElementById("ver-mais");
@@ -29,6 +31,10 @@ const produtos = [
 abrirCarrinho.addEventListener("click", function() {
     modalCarrinho.style.display = "flex";
 });
+
+bagModal.addEventListener("click", function(){
+    modalCarrinho.style.display = "flex";
+})
 
 modalCarrinho.addEventListener("click", function(event) {
     if (event.target === modalCarrinho) {
@@ -103,6 +109,7 @@ function atualizarCarrinho() {
     });
 
     contadorItem.textContent = cart.length;
+    contadorBag.textContent = cart.length;
 
     document.querySelectorAll('.btn-menos').forEach(button => {
         button.addEventListener('click', function(event) {
@@ -138,7 +145,6 @@ function showMensagem(mensagem) {
     mensagemItem.style.opacity = 1;
 
     setTimeout(function() { 
-        
         mensagemItem.style.display = "none";
     }, 2000);
 }

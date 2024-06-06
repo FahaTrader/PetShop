@@ -69,6 +69,21 @@
     justify-content: center;
 }
 
+.bag{
+    position: fixed;
+    bottom: 25px;
+    right: 15px;
+    background-color: darkblue;
+    padding: 15px 8px;
+    border-radius: 50px;
+    display: none;
+}
+
+.bag i{
+    font-size: 20px;
+    z-index: 9999;
+}
+
 /*----- Header Section ------*/
 .bg{
     background-image: url(/assets/bg2.jpg);
@@ -201,6 +216,7 @@
     font-size: 50px;
     text-align: center;
     font-weight: 700;
+    margin-bottom: 50px;
 }
 
 .container-menu{
@@ -219,7 +235,7 @@
     position: relative;
     overflow: visible;
     box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-    margin-top: 30px;
+    margin-top: 10px;
     margin-bottom: 20px;
 }
    
@@ -382,6 +398,7 @@
     overflow-x: hidden;
     overflow-y: auto;
     border-left: solid 1px black;
+    padding-left: 10px;
 }
 
 .header-modal{
