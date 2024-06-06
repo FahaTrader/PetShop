@@ -208,16 +208,12 @@ a {
         margin-top: 0;
     }
 
-    .title-adocao{
-        font-size: 25px;
-    }
-
     .nav-link{
         font-weight: 600;
     }
 
     .adocao-bg{
-        min-height: 725px;
+        min-height: 749px;
     }
 
     .card{
