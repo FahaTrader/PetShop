@@ -382,6 +382,7 @@
     overflow-x: hidden;
     overflow-y: auto;
     border-left: solid 1px black;
+    padding-left: 10px;
 }
 
 .header-modal{
