@@ -551,3 +551,48 @@
     border-radius: 15px;
     opacity: 0;
 }
+
+/*----- Final Section -----*/
+.button-final{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.title-final{
+    text-align: center;
+    color: darkblue;
+    font-weight: 700;
+    margin-left: 100px;
+}
+
+form{
+    margin-top: 50px;
+}
+
+.form-label{
+    font-size: 20px;
+    font-weight: 700;
+    margin-top: 15px;
+}
+
+.form-control{
+    width: 98%;
+    height: 45px;
+    border-radius: 10px;
+}
+
+.btn-final{
+    padding: 8px 60px;
+    font-size: 20px;
+    border: solid 1px darkblue;
+    color: darkblue;
+    margin-top: 50px;
+    font-weight: 700;
+}
+
+.btn-final:hover{
+    background-color: darkblue;
+    color: white;
+}

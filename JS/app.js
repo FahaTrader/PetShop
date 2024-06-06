@@ -10,6 +10,9 @@ const contadorBag = document.getElementById("bag-contador");
 const mensagemItem = document.getElementById("container-mensagem");
 const productContainer = document.getElementById("product-container");
 const verMaisBtn = document.getElementById("ver-mais");
+const continuarCompra = document.getElementById("continuar");
+const finalizarPedido = document.getElementById("btn-final");
+const fecharFinal = document.getElementById("fechar-final");
 
 let cart = [];
 let produtosMostrados = 0;
@@ -25,10 +28,10 @@ const produtos = [
     { name: "Ração Cachorro 10Kg", price: 127, image: "/assets/Ração.png" },
     { name: "Ração Gato 1Kg", price: 61.50, image: "/assets/ração gato.png" },
     { name: "Mistura calopsita 500g", price: 7.50, image: "/assets/ração callopsita.png" },
-    
 ];
 
 abrirCarrinho.addEventListener("click", function() {
+    atualizarCarrinho();
     modalCarrinho.style.display = "flex";
 });
 
@@ -189,3 +192,31 @@ verMaisBtn.addEventListener("click", exibirProdutos);
 
 // Exibir os primeiros produtos ao carregar a página
 exibirProdutos();
+
+continuarCompra.addEventListener("click", function(){
+    $("#modal-carrinho").addClass("hidden");
+    $("#bg-final").removeClass("hidden");
+});
+
+fecharFinal.addEventListener("click", function(){
+    $("#modal-carrinho").removeClass("hidden");
+    $("#bg-final").addClass("hidden");
+})
+
+finalizarPedido.addEventListener("click", function() {
+    const nomeCompleto = document.getElementById("nome-completo").value;
+    const endereco = document.getElementById("endereco").value;
+    const formaPagamento = document.getElementById("forma-pagamento").value;
+    const whatsapp = document.getElementById("whatsapp").value;
+
+    let mensagem = `*Pedido*\n\n*Nome:* ${nomeCompleto}\n*Endereço:* ${endereco}\n*Forma de pagamento:* ${formaPagamento}\n*WhatsApp:* ${whatsapp}\n\n*Itens do pedido:*\n`;
+
+    cart.forEach(item => {
+        mensagem += `- ${item.name} (x${item.quantity}): R$ ${(item.price * item.quantity).toFixed(2)}\n`;
+    });
+
+    mensagem += `\n*Valor Total:* ${valorTotal.textContent}`;
+
+    const whatsappUrl = `https://api.whatsapp.com/send?phone=YOUR_PHONE_NUMBER&text=${encodeURIComponent(mensagem)}`;
+    window.open(whatsappUrl, '_blank');
+});
