@@ -181,6 +181,7 @@ a {
 
 .title-adocao{
     text-align: center;
+    color: darkblue;
 }
 
 .btn-enviar{
@@ -207,12 +208,16 @@ a {
         margin-top: 0;
     }
 
+    .title-adocao{
+        font-size: 25px;
+    }
+
     .nav-link{
         font-weight: 600;
     }
 
     .adocao-bg{
-        min-height: 700px;
+        min-height: 725px;
     }
 
     .card{
