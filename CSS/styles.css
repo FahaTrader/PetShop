@@ -123,10 +123,6 @@
     justify-content: center;
 }
 
-.images img{
-    width: 70px;
-}
-
 /*----- Promoções Section -----*/
 .container-promo{
     display: flex;
