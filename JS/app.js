@@ -217,6 +217,6 @@ finalizarPedido.addEventListener("click", function() {
 
     mensagem += `\n*Valor Total:* ${valorTotal.textContent}`;
 
-    const whatsappUrl = `https://api.whatsapp.com/send?phone=YOUR_PHONE_NUMBER&text=${encodeURIComponent(mensagem)}`;
+    const whatsappUrl = `https://api.whatsapp.com/send?phone=5521988526928&text=${encodeURIComponent(mensagem)}`;
     window.open(whatsappUrl, '_blank');
 });
