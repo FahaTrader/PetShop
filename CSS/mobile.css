@@ -179,6 +179,10 @@
         padding: 15px 10px;
     }
 
+    .desc-modal{
+        width: 180px;
+    }
+
     .form-control{
         width: 96%;
     }
