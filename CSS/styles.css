@@ -1,0 +1,598 @@
+.html, body{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.container-fluid{
+    padding: 1% 8%;
+}
+
+/*----- Navbar Section -----*/
+.navbar-brand{
+    color: blue;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    border-radius: 50px;
+    padding: 8px 50px;
+    position: fixed;
+    width: 85%;
+    z-index: 999;
+}
+
+.navbar-brand span{
+    color: yellow;
+}
+
+.navbar-nav{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-link{
+    color: white;
+    font-weight: 700;
+    transition: all 0.5s;
+}
+
+.nav-link:hover{
+    color: white;
+    text-decoration: underline 4px white;
+}
+
+.fa-cart-shopping{
+    color: white;
+    font-size: 25px;
+}
+
+.contador{
+    position: absolute;
+    right: 45px;
+    top: 5px;
+    background-color: yellow;
+    border-radius: 50px;
+    width: 25px;
+    font-size: 18px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bag{
+    position: fixed;
+    bottom: 25px;
+    right: 15px;
+    background-color: darkblue;
+    padding: 15px 8px;
+    border-radius: 50px;
+    display: none;
+}
+
+.bag i{
+    font-size: 20px;
+    z-index: 9999;
+}
+
+/*----- Header Section ------*/
+.bg{
+    background-image: url(/assets/bg2.jpg);
+    min-height: 545px;
+}
+
+.title-hero{
+    font-size: 45px;
+    font-weight: 700;
+    margin-top: 140px;
+}
+
+.title-hero span{
+    color: blue; 
+}
+
+.buttons-hero{
+    margin-top: 35px;
+}
+
+.btn-cardapio{
+    font-size: 20px;
+    background-color: blue;
+    color: white;
+    font-weight: 800;
+    padding: 8px 20px;
+}
+
+.btn-wpp{
+    font-size: 20px;
+    font-weight: 700;
+    padding: 8px 20px;
+}
+
+.btn-cardapio:hover, .btn-wpp:hover{
+    color: white;
+    border: 1px solid white;
+}
+
+.hero-img img{
+    width: 68%;
+    margin-top: 30px;
+    margin-left: 100px;
+}
+
+/*----- images Section ------*/
+.images{
+    margin-top: 30px;
+    display: flex;
+    gap: 150px;
+    align-items: center;
+    justify-content: center;
+}
+
+/*----- Promoções Section -----*/
+.container-promo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+
+.card-dog{
+    width: 500px;
+    height: 300px;
+    background-image: url(/assets/bg-dog.jpg);
+    background-size: cover;
+    border-radius: 50px;
+    margin-top: 70px;
+}
+
+.card-cat{
+    width: 500px;
+    height: 300px;
+    background-image: url(/assets/bg-cat.avif);
+    background-size: cover;
+    border-radius: 50px;
+    margin-top: 70px;
+}
+
+.desc-promo{
+    padding-top: 30px;
+    margin-left: 270px;
+}
+
+.title-promo{
+    font-size: 35px;
+    font-weight: 700;
+}
+
+.card-dog .title-promo span{
+    color: yellow;
+}
+
+.card-cat .title-promo span{
+    color: blue;
+}
+
+.btn-promo{
+    font-size: 22px;
+    font-weight: 800;
+    color: white;
+    margin-top: 35px;
+}
+
+.btn-promo:hover{
+    color: white;
+    border: solid 2px white;
+}
+
+/*----- Menu Section -----*/
+.menu{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.sub-title{
+    color: gold;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 0.1;
+    padding-top: 50px;
+    text-align: center;
+}
+
+.title-menu{
+    color: darkblue;
+    font-size: 50px;
+    text-align: center;
+    font-weight: 700;
+    margin-bottom: 50px;
+}
+
+.container-menu{
+    margin-top: 20px;
+    display: flex;
+    gap: 100px;
+    align-items: center;
+    justify-content: center;
+}
+
+#menu .card {
+    width: 270px;
+    height: 400px;
+    padding: .8em;
+    background: #f5f5f5;
+    position: relative;
+    overflow: visible;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+   
+#menu .card-img img{
+    border-radius: .5rem;
+    transition: .3s ease;
+}
+   
+#menu .card-info {
+    padding-top: 10%;
+}
+   
+#menu svg {
+    width: 20px;
+    height: 20px;
+}
+   
+#menu .card-footer {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 10px;
+    border-top: 1px solid #ddd;
+}
+   
+/*Text*/
+#menu .text-title {
+    font-weight: 900;
+    font-size: 1.2em;
+    line-height: 1.5;
+}
+   
+#menu .text-body {
+    font-size: .9em;
+    padding-bottom: 10px;
+}
+   
+/*Button*/
+#menu .card-button {
+    border: 1px solid #252525;
+    display: flex;
+    padding: .3em;
+    cursor: pointer;
+    border-radius: 50px;
+    transition: .3s ease-in-out;
+}
+   
+/*Hover*/
+#menu .card-img:hover {
+    box-shadow: rgba(226, 196, 63, 0.25) 0px 13px 47px -5px, rgba(180, 71, 71, 0.3) 0px 8px 16px -8px;
+}
+   
+#menu .card-button:hover {
+    border: 1px solid #ffcaa6;
+    background-color: #ffcaa6;
+}
+   
+.btn-ver-mais{
+    font-size: 22px;
+    font-weight: 600;
+    margin-top: 50px;
+    background-color: darkblue;
+    color: white;
+    padding: 8px 50px;
+    border-radius: 10px;
+}
+
+.btn-ver-mais:hover{
+    color: white;
+    transform: scale(0.8);
+}
+
+/*----- Beneficios Secction -----*/
+.beneficios{
+    background-image: url(/assets/bg.jpg);
+    padding-top: 20px;
+    padding-bottom: 50px;
+}
+
+.title-beneficios{
+    color: darkblue;
+    font-size: 50px;
+    text-align: center;
+    font-weight: 700;
+}
+
+.container-beneficio{
+    margin-top: 50px;
+}
+
+.desc-beneficio{
+    display: flex;
+    margin-top: 100px;
+}
+
+.desc-beneficio i{
+    margin-right: 15px;
+    font-size: 60px;
+    color: gold;
+}
+
+/*----- Adoção Section -----*/
+.adocao{
+    background-image: url(/assets/bg-adocao.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 700px;
+}
+
+.title-adocao{
+    text-align: center;
+    margin-top: 10%;
+    font-weight: bold;
+}
+
+.desc-adocao{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-adotar{
+    background-color: blue;
+    color: white;
+    padding: 8px 50px;
+    margin-top: 30px;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+/*----- Footer Section -----*/
+.footer{
+    background-color: #000;
+}
+
+.container-footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 18%;
+    color: whitesmoke;
+    font-size: 20px;
+}
+
+.hidden{
+    display: none;
+}
+
+/*----- Modal Section -----*/
+.modal{
+    width: 100%;
+}
+
+.bg-modal{
+    width: 30%;
+    background-color: rgb(255, 255, 255);
+    margin-left: 69.5%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    border-left: solid 1px black;
+    padding-left: 10px;
+}
+
+.header-modal{
+    display: flex;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.fa-xmark{
+    font-size: 25px;
+    font-weight: bold;
+    color: red;
+}
+
+.title-modal{
+    font-size: 30px;
+    margin-left: 60px;
+}
+
+.card-item{
+    display: flex;
+    margin-top: 50px;
+    border-bottom: solid 1px #999;
+    padding-bottom: 25px;
+}
+
+.card-item img{
+    width: 25%;
+    margin-right: 20px;
+}
+
+.desc-modal{
+    width: 220px;
+}
+
+.title-desc{
+    margin-top: 10px;
+    font-size: 20px;
+    font-weight: 800;
+}
+
+.desc-price{
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.desc-price span{
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.buttons-quantity{
+    display: flex;
+    gap: 5px;
+    margin-top: 40px;
+    position: relative;
+}
+
+.btn-menos{
+    position: absolute;
+    top: 20px;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: red;
+    border-radius: 50px;
+    width: 10px;
+    height: 25px;
+    color: white;
+    padding-top: 8px;
+}
+
+.btn-mais{
+    position: absolute;
+    top: 20px;
+    right: -50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: red;
+    border-radius: 50px;
+    width: 10px;
+    height: 25px;
+    color: white;
+    padding-top: 8px;
+}
+
+.quantity-item{
+    font-size: 24px;
+    font-weight: 700;
+    position: absolute;
+    top: 13px;
+    right: -19px;
+}
+
+.btn-modal{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.total-cart{
+    font-size: 22px;
+    font-weight: 700;
+    margin-top: 50px;
+}
+
+.btn-comprar{
+    padding: 8px 60px;
+    border: solid 2px darkblue;
+    color: darkblue;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.btn-comprar:hover{
+    background-color: darkblue;
+    color: white;
+}
+
+.body-modal{
+    flex: 1;
+    overflow: auto;
+    overflow-x: hidden;
+}
+
+.bg-modal::-webkit-scrollbar{
+    width: 6px;
+    background: transparent;
+}
+
+.bg-modal::-webkit-scrollbar-thumb{
+    background: var(--color-white);
+}
+.bg-modal::-webkit-scrollbar-track{
+    background: transparent;
+}
+
+.container-mensagem{
+    position: fixed;
+    top: 100px;
+    right: 50px;
+    background-color: rgb(118, 243, 118);
+    z-index: 9999;
+    padding: 10px 50px;
+    font-size: 20px;
+    font-weight: 700;
+    border-radius: 15px;
+    opacity: 0;
+}
+
+/*----- Final Section -----*/
+.button-final{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.title-final{
+    text-align: center;
+    color: darkblue;
+    font-weight: 700;
+    margin-left: 100px;
+}
+
+form{
+    margin-top: 50px;
+}
+
+.form-label{
+    font-size: 20px;
+    font-weight: 700;
+    margin-top: 15px;
+}
+
+.form-control{
+    width: 98%;
+    height: 45px;
+    border-radius: 10px;
+}
+
+.btn-final{
+    padding: 8px 60px;
+    font-size: 20px;
+    border: solid 1px darkblue;
+    color: darkblue;
+    margin-top: 50px;
+    font-weight: 700;
+}
+
+.btn-final:hover{
+    background-color: darkblue;
+    color: white;
+}

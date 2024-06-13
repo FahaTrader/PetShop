@@ -1,0 +1,200 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta property="og:type" content="website"/>
+    <meta property="og:title" content="Petshop do bairro"/>
+    <meta property="og:image" content="https://pet-shop-rouge.vercel.app/assets/caogato.png"/>
+    <meta property="og:description" content="O melhor petshop da cidade e nem falamos da entrega!!"/>
+    <meta property="og:site_name" content="Petshop do Bairro" />
+
+    <!-- Links CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="shortcut icon" href="/assets/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="/CSS/styles.css" />
+    <link rel="stylesheet" href="/CSS/mobile.css" />
+    
+    <title>PetShop</title>
+  </head>
+  <body>
+    <div class="container-mensagem" id="container-mensagem"></div>
+    <div class="bag" id="bag-modal">
+        <div class="bag-contador" id="bag-contador">0</div>
+        <button class="btn"><i class="fa-solid fa-cart-shopping"></button></i>
+    </div>
+    <section class="bg ">
+        <div class="container-fluid">
+            <nav class="navbar navbar-expand-lg">
+                <a href="#" class="navbar-brand">Pet<span>shop</span></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto mr-auto">
+                        <li class="nav-item">
+                            <a href="#hero" class="nav-link">INÍCIO</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#menu" class="nav-link">COMPRAR</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">SOBRE</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#beneficios" class="nav-link">BENEFICIOS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#adocao" class="nav-link">ADOÇÃO</a>
+                        </li>
+                    </ul>
+                    <div class="contador" id="contador">0</div>
+                    <button class="btn btn-carrinho" id="btn-carrinho"><i class="fa-solid fa-cart-shopping"></i></button>
+                </div>
+            </nav>
+
+            <section class="hero" id="hero">
+                <div class="row">
+                    <div class="col-12 col-lg-6">
+                        <h1 class="title-hero">Tudo o que você precisa para o seu <span>PET</span> está aqui,venha conferir nossos produtos.</h1>
+                        <div class="buttons-hero">
+                            <a href="#menu" class="btn btn-cardapio">Comprar agora</a>
+                            <a href="https://wa.me/5521988526928?text=Ol%C3%A1%2C+gostaria+de+saber+mais%21%21" class="btn btn-wpp btn-outline-success"><i class="fa-brands fa-whatsapp" style="color: #63E6BE;"></i></i> (21) 98852-6928</a>
+                        </div>
+                    </div>
+                    <div class="hero-img col-lg-6">
+                        <img src="/assets/caogato.png" alt="cachorro e gato">
+                    </div>
+                </div>
+            </section>
+        </div>
+    </section>
+
+    <main class="sections ">
+        <div class="container-fluid">
+            <section class="images">
+                <img src="/assets/cat-litter-box-svgrepo-com.svg" alt="box-cat">
+                <img src="/assets/dog-svgrepo-com.svg" alt="dog">
+                <img src="/assets/cat-tree-svgrepo-com.svg" alt="cat-brincs">
+                <img src="/assets/dog-food-svgrepo-com.svg" alt="eat-dog">
+                <img src="/assets/black-cat-svgrepo-com.svg" alt="cat">
+            </section>
+
+            <section class="menu" id="menu">
+                <p class="sub-title">Produtos principais</p>
+                <h1 class="title-menu">Produtos para seu pet</h1>
+
+                <div id="product-container" class="row container-menu"></div>
+                <button class="btn btn-ver-mais" id="ver-mais">Ver Mais</button>
+            </section>
+        </div>
+        <section class="beneficios" id="beneficios">
+            <div class="container-fluid">
+                <p class="sub-title">Porque escolher-nos</p>
+                <h1 class="title-beneficios">Fornecemos produtos de alta qualidade para o seu pet</h1>
+                <div class="row container-beneficio">
+                    <div class="col-12 col-lg-6 desc-beneficio">
+                        <i class="fa-solid fa-star"></i>
+                        <div>
+                            <h1>Qualidade garantida</h1>
+                            <p>Rações e petiscos selecionados para o melhor do seu pet.</p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-6 desc-beneficio">
+                        <i class="fa-solid fa-truck-fast"></i>
+                        <div>
+                            <h1>Entrega rápida</h1>
+                            <p>Fazemos a entrega o mais rápido possível e com o maior cuidado para que seu produto chege até você em perfeito estado.</p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-6 desc-beneficio">
+                        <i class="fa-solid fa-credit-card"></i>
+                        <div>
+                            <h1>Pagamento seguro</h1>
+                            <p>Melhores formas de pagamento e super seguros.</p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-6 desc-beneficio">
+                        <i class="fa-solid fa-rotate-right"></i>
+                        <div>
+                            <h1>Retorno fácil</h1>
+                            <p>Utilizando nossos cupons, você terá sempre um retorno do seu dinheiro. </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="adocao" id="adocao">
+            <p class="sub-title">Adote um amigo</p>
+            <h1 class="title-menu">Eles não veêm a hora de ganhar um novo lar!!</h1>
+            <div class="desc-adocao">
+                <h1 class="title-adocao">Traga a alegria para dentro do seu lar!!</h1>
+                <a href="/templates/adotar.html" class="btn btn-adotar">Eu quero <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer " id="footer">
+        <div class="container-fluid container-footer">
+            <a href="#" class="navbar-brand">Pet<span>shop</span></a>
+            <p class="desc-footer">&copy Todos os direitos reservados | 2024</p>
+            <div class="redes">
+                <a href="https://www.instagram.com/aguiar.programador/"><i class="fa-brands fa-instagram" style="color: #B197FC;"></i> @aguiar.programador</a>
+                <a href="#"><i class="fa-brands fa-whatsapp" style="color: #63E6BE;"></i> (21) 98852-6928</a>
+            </div>
+        </div>
+    </footer>
+
+    <section class="modal" id="modal">
+        <div class="bg-modal">
+            <div id="modal-carrinho" class="">
+                <div class="header-modal">
+                    <button class="btn btn-fechar" id="btn-fechar"><i class="fa-solid fa-xmark"></i></button>
+                    <h1 class="title-modal">MEU CARRINHO</h1>
+                </div>
+                <div class="body-modal" id="body-modal"></div>
+                <p class="total-cart">Total: <span id="valor-total">0,00</span> <i class="fa-solid fa-bag-shopping"></i></p>
+                <div class="btn-modal">
+                    <button class="btn btn-comprar" id="continuar">Continuar</button>
+                </div>
+            </div>
+            <div class="bg-final hidden" id="bg-final">
+                <div class="header-modal">
+                    <button class="btn btn-fechar" id="fechar-final"><i class="fa-solid fa-arrow-left"></i></button>
+                    <h1 class="title-final">Informações</h1>
+                </div>
+                <form>
+                    <label class="form-label" for="name">Nome Completo:</label>
+                    <input type="text" class="form-control" id="nome-completo" required>
+
+                    <label class="form-label" for="Whatsapp">Whatsapp:</label>
+                    <input type="phone" class="form-control" id="whatsapp" required>
+
+                    <label class="form-label" for="endereco">Endereço:</label>
+                    <input type="text" class="form-control" id="endereco" required>
+
+                    <label class="form-label" for="pagamento">Forma de Pagamento:</label>
+                    <select id="forma-pagamento" class="form-control">
+                        <option value="Dinheiro">Dinheiro</option>
+                        <option value="Cartão de Crédito">Cartão de Crédito</option>
+                        <option value="Cartão de Débito">Cartão de Débito</option>
+                        <option value="Pix">Pix</option>
+                    </select>
+                </form>
+                <div class="button-final">
+                    <button class="btn btn-final" id="btn-final">Finalizar pedido</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="/JS/app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+  </body>
+</html>
