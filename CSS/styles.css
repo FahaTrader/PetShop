@@ -386,6 +386,17 @@
     display: none;
 }
 
+.redes a{
+    color: #FFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.redes i{
+    margin-right: 5px;
+}
+
 /*----- Modal Section -----*/
 .modal{
     width: 100%;
