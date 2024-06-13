@@ -18,12 +18,11 @@
     }
 
     .btn-carrinho{
-        margin-left: 40%;
+        display: none;
     }
 
     .contador{
-        top: 255px;
-        right: 140px;
+        display: none;
     }
 
     .bag{
@@ -169,7 +168,19 @@
         flex-direction: column;
         text-align: center;
     }
+    
+    .redes a{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #FFF;
+    }
 
+    .redes i{
+        margin-right: 10px;
+    }
+
+    /*----- Modal Section -----*/
     .bg-modal{
         width: 100%;
         margin-left: 0;
