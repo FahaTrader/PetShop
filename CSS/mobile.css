@@ -310,8 +310,8 @@
     }
 
     .container-mensagem{
-        top: 30px;
-        right: 10px;
+        top: 5px;
+        right: 5px;
         padding: 15px 10px;
     }
 
@@ -321,7 +321,7 @@
 
     .card-item{
         padding: 1rem;
-        max-width: 700px;
+        max-width: 630px;
         gap: 30px;
     }
 
@@ -331,11 +331,6 @@
 
     .title-final{
         margin-left: 45px;
-    }
-
-    #container-mensagem {
-        top: 0;
-        right: 0;
     }
 }
 
@@ -455,9 +450,8 @@
     }
 
     .container-mensagem{
-        top: 30px;
-        right: 10px;
-        padding: 15px 10px;
+        top: 10px;
+        right: 5px;
     }
 
     .desc-modal{
@@ -476,10 +470,5 @@
 
     .title-final{
         margin-left: 45px;
-    }
-
-    #container-mensagem {
-        top: 0;
-        right: 0;
     }
 }
