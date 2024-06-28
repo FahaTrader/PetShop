@@ -130,11 +130,11 @@
         </section>
         
         <section class="adocao" id="adocao">
-            <p class="sub-title">Adote um amigo</p>
-            <h1 class="title-menu">Eles não veêm a hora de ganhar um novo lar!!</h1>
+            <p class="sub-title">Cuide do seu amigo</p>
+            <h1 class="title-menu">Marque uma consulta ou um baho e tosa.</h1>
             <div class="desc-adocao">
-                <h1 class="title-adocao">Traga a alegria para dentro do seu lar!!</h1>
-                <a href="/templates/adotar.html" class="btn btn-adotar">Eu quero <i class="fa-solid fa-arrow-right"></i></a>
+                <h1 class="title-adocao">Venha cuidar do seu amiguinho com a gente!!</h1>
+                <a href="/templates/adotar.html" class="btn btn-adotar">Marcar <i class="fa-solid fa-arrow-right"></i></a>
             </div>
         </section>
     </main>
@@ -150,46 +150,46 @@
         </div>
     </footer>
 
-    <section class="modal" id="modal">
+    <section class="sidebar" id="modal">
+        <div id="modal-carrinho" class="">
+            <div class="header-modal">
+                <button class="btn btn-fechar" id="btn-fechar"><i class="fa-solid fa-xmark"></i></button>
+                <h1 class="title-modal">MEU CARRINHO</h1>
+            </div>
+            <div class="body-modal" id="body-modal"></div>
+            <p class="total-cart">Total: <span id="valor-total">0,00</span> <i class="fa-solid fa-bag-shopping"></i></p>
+            <div class="btn-modal">
+                <button class="btn btn-comprar" id="continuar">Continuar</button>
+            </div>
+        </div>
+        <div class="bg-final hidden" id="bg-final">
+            <div class="header-modal">
+                <button class="btn btn-fechar" id="fechar-final"><i class="fa-solid fa-arrow-left"></i></button>
+                <h1 class="title-final">Informações</h1>
+            </div>
+            <form>
+                <label class="form-label" for="name">Nome Completo:</label>
+                <input type="text" class="form-control" id="nome-completo" required>
+
+                <label class="form-label" for="Whatsapp">Whatsapp:</label>
+                <input type="phone" class="form-control" id="whatsapp" required>
+
+                <label class="form-label" for="endereco">Endereço:</label>
+                <input type="text" class="form-control" id="endereco" required>
+
+                <label class="form-label" for="pagamento">Forma de Pagamento:</label>
+                <select id="forma-pagamento" class="form-control">
+                    <option value="Dinheiro">Dinheiro</option>
+                    <option value="Cartão de Crédito">Cartão de Crédito</option>
+                    <option value="Cartão de Débito">Cartão de Débito</option>
+                    <option value="Pix">Pix</option>
+                </select>
+            </form>
+            <div class="button-final">
+                <button class="btn btn-final" id="btn-final">Finalizar pedido</button>
+            </div>
+        </div>
         <div class="bg-modal">
-            <div id="modal-carrinho" class="">
-                <div class="header-modal">
-                    <button class="btn btn-fechar" id="btn-fechar"><i class="fa-solid fa-xmark"></i></button>
-                    <h1 class="title-modal">MEU CARRINHO</h1>
-                </div>
-                <div class="body-modal" id="body-modal"></div>
-                <p class="total-cart">Total: <span id="valor-total">0,00</span> <i class="fa-solid fa-bag-shopping"></i></p>
-                <div class="btn-modal">
-                    <button class="btn btn-comprar" id="continuar">Continuar</button>
-                </div>
-            </div>
-            <div class="bg-final hidden" id="bg-final">
-                <div class="header-modal">
-                    <button class="btn btn-fechar" id="fechar-final"><i class="fa-solid fa-arrow-left"></i></button>
-                    <h1 class="title-final">Informações</h1>
-                </div>
-                <form>
-                    <label class="form-label" for="name">Nome Completo:</label>
-                    <input type="text" class="form-control" id="nome-completo" required>
-
-                    <label class="form-label" for="Whatsapp">Whatsapp:</label>
-                    <input type="phone" class="form-control" id="whatsapp" required>
-
-                    <label class="form-label" for="endereco">Endereço:</label>
-                    <input type="text" class="form-control" id="endereco" required>
-
-                    <label class="form-label" for="pagamento">Forma de Pagamento:</label>
-                    <select id="forma-pagamento" class="form-control">
-                        <option value="Dinheiro">Dinheiro</option>
-                        <option value="Cartão de Crédito">Cartão de Crédito</option>
-                        <option value="Cartão de Débito">Cartão de Débito</option>
-                        <option value="Pix">Pix</option>
-                    </select>
-                </form>
-                <div class="button-final">
-                    <button class="btn btn-final" id="btn-final">Finalizar pedido</button>
-                </div>
-            </div>
         </div>
     </section>
 

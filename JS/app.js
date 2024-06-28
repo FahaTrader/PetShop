@@ -1,7 +1,8 @@
-const abrirCarrinho = document.getElementById("btn-carrinho");
-const bagModal = document.getElementById("bag-modal");
-const modalCarrinho = document.getElementById("modal");
+const btnCarrinho = document.getElementById("btn-carrinho");
+const btnFechar = document.getElementById("btn-fechar");
+const modal = document.getElementById("modal");
 const fecharCarrinho = document.getElementById("btn-fechar");
+const modalMobile = document.getElementById("bag-modal");
 const menu = document.getElementById("menu");
 const cartItem = document.getElementById("body-modal");
 const valorTotal = document.getElementById("valor-total");
@@ -30,23 +31,26 @@ const produtos = [
     { name: "Mistura calopsita 500g", price: 7.50, image: "/assets/ração callopsita.png" },
 ];
 
-abrirCarrinho.addEventListener("click", function() {
-    atualizarCarrinho();
-    modalCarrinho.style.display = "flex";
+btnCarrinho.addEventListener("click", () => {
+    modal.classList.add("show");
 });
 
-bagModal.addEventListener("click", function(){
-    modalCarrinho.style.display = "flex";
-})
+btnFechar.addEventListener("click", () => {
+    modal.classList.remove("show");
+});
 
-modalCarrinho.addEventListener("click", function(event) {
-    if (event.target === modalCarrinho) {
-        modalCarrinho.style.display = "none";
+modalMobile.addEventListener("click", () => {
+    modal.classList.add("show");
+});
+
+modal.addEventListener("click", function(event) {
+    if (event.target === modal) {
+        modal.classList.remove("show");
     }
 });
 
 fecharCarrinho.addEventListener("click", function() {
-    modalCarrinho.style.display = "none";
+    modal.classList.remove("show");
 });
 
 menu.addEventListener("click", function(event) {
@@ -66,6 +70,7 @@ function addCart(name, price, image) {
 
     if (existeItem) {
         existeItem.quantity += 1;
+        showMensagem("Item adicionado com sucesso");
     } else {
         cart.push({
             name,
@@ -73,10 +78,10 @@ function addCart(name, price, image) {
             image,
             quantity: 1,
         });
+        showMensagem("Item adicionado com sucesso");
     }
 
     atualizarCarrinho();
-    showMensagem("Item adicionado com sucesso");
 }
 
 function atualizarCarrinho() {
@@ -141,14 +146,16 @@ function updateQuantity(name, delta) {
 }
 
 function showMensagem(mensagem) {
-    mensagemItem.textContent = mensagem;
-    mensagemItem.style.display = "block";
-    $("#container-mensagem").addClass("animate__animated");
-    $("#container-mensagem").addClass("animate__fadeInDown");
-    mensagemItem.style.opacity = 1;
+    const mensagemElement = document.createElement("div");
+    mensagemElement.className = "mensagem-item animate__animated animate__fadeInDown";
+    mensagemElement.textContent = mensagem;
+    mensagemItem.appendChild(mensagemElement);
 
-    setTimeout(function() { 
-        mensagemItem.style.display = "none";
+    setTimeout(() => {
+        mensagemElement.classList.replace("animate__fadeInDown", "animate__fadeOutUp");
+        mensagemElement.addEventListener("animationend", () => {
+            mensagemElement.remove();
+        });
     }, 2000);
 }
 

@@ -49,7 +49,7 @@
 
     .title-hero{
         font-size: 35px;
-        margin-top: 50px;
+        margin-top: 30px;
     }
 
     .btn-cardapio{
@@ -75,38 +75,6 @@
 
     .images img{
         width: 50px;
-    }
-
-    /*----- Promoções Section ------*/
-    .container-promo{
-        flex-direction: column;
-    }
-    
-    .card-dog{
-        width: 380px;
-        height: 240px;
-        padding: 1% 2%;
-    }
-
-    .card-cat{
-        width: 380px;
-        height: 240px;
-        padding: 1% 2%;
-    }
-
-    .desc-promo{
-        margin-left: 0;
-        text-align: center;
-        padding-top: 10px;
-    }
-
-    .title-promo{
-        font-size: 30px;
-        font-weight: bold;
-    }
-
-    .btn-promo{
-        margin-top: 70px;
     }
 
     /*----- Menu Section -----*/
@@ -181,9 +149,8 @@
     }
 
     /*----- Modal Section -----*/
-    .bg-modal{
+    .sidebar{
         width: 100%;
-        margin-left: 0;
     }
 
     .container-mensagem{
@@ -203,8 +170,300 @@
     .title-final{
         margin-left: 45px;
     }
+
+    #container-mensagem {
+        top: 0;
+        right: 0;
+    }
 }
 
-@media (min-width: 429px) and (max-width: 991px){
+@media (min-width: 431px) and (max-width: 721px){
+    .navbar{
+        justify-content: space-between;
+        padding: 5px 15px;
+        position: static;
+        width: 100%;
+        margin-top: 0;
+    }
 
+    .navbar-nav{
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .fa-bars{
+        color: white;
+        font-size: 24px;
+    }
+
+    .btn-carrinho{
+        display: none;
+    }
+
+    .contador{
+        display: none;
+    }
+
+    .bag{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 5px 0px;
+        z-index: 999;
+        right: 20px;
+    }
+
+    .bag-contador{
+        position: absolute;
+        background-color: yellow;
+        bottom: 25px;
+        right: 1px;
+        border-radius: 50px;
+        padding: 0px 6px;
+    }
+
+    /*------------------------------------------- Images Section -------------------------------------------*/
+    .images{
+        margin-top: 40px;
+        gap: 30px;
+    }
+
+    .images img{
+        width: 60px;
+    }
+
+    /*------------------------------------------- Hero Section -------------------------------------------*/
+    .title-hero{
+        margin-top: 30px;
+        font-size: 2.5rem;
+    }
+
+    /*------------------------------------------- MENU Section -------------------------------------------*/
+    .title-menu{
+        font-size: 2rem;
+    }
+    
+    .container-menu{
+        gap: 20px; 
+    }
+
+    /*------------------------------------------- BENEFICIOS Section -------------------------------------------*/
+    .title-beneficios{
+        font-size: 2rem;
+    }
+
+    .desc-beneficio h1{
+        font-size: 28px;
+        font-weight: 700;
+    }
+
+    .desc-beneficio p{
+        font-weight: 600;
+    }
+
+    .desc-beneficio i{
+        font-size: 45px;
+    }
+    
+    /*------------------------------------------- SERVICE Section -------------------------------------------*/
+    .title-adocao{
+        font-size: 2rem;
+        max-width: 500px;
+    }
+
+    /*------------------------------------------- Footer Section -------------------------------------------*/
+    .container-footer{
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .redes a{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #FFF;
+    }
+
+    .redes i{
+        margin-right: 10px;
+    }
+
+    /*------------------------------------------- Modal Section -------------------------------------------*/
+    .sidebar{
+        width: 70%;
+    }
+
+    .container-mensagem{
+        top: 30px;
+        right: 10px;
+        padding: 15px 10px;
+    }
+
+    .desc-modal{
+        width: 180px;
+    }
+
+    .card-item{
+        padding: 1rem;
+        max-width: 700px;
+        gap: 30px;
+    }
+
+    .form-control{
+        width: 96%;
+    }
+
+    .title-final{
+        margin-left: 45px;
+    }
+
+    #container-mensagem {
+        top: 0;
+        right: 0;
+    }
+}
+
+@media (min-width: 722px) and (max-width: 991px){
+    .navbar{
+        justify-content: space-between;
+        padding: 5px 15px;
+        position: static;
+        width: 100%;
+        margin-top: 0;
+    }
+
+    .navbar-nav{
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .fa-bars{
+        color: white;
+        font-size: 24px;
+    }
+
+    .btn-carrinho{
+        display: none;
+    }
+
+    .contador{
+        display: none;
+    }
+
+    .bag{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 5px 0px;
+        z-index: 999;
+        right: 20px;
+    }
+
+    .bag-contador{
+        position: absolute;
+        background-color: yellow;
+        bottom: 25px;
+        right: 1px;
+        border-radius: 50px;
+        padding: 0px 6px;
+    }
+
+    /*------------------------------------------- Images Section -------------------------------------------*/
+    .images{
+        margin-top: 40px;
+        gap: 45px;
+    }
+
+    .images img{
+        width: 80px;
+    }
+
+    #container-mensagem {
+        top: 0;
+        right: 0;
+    }
+
+    /*------------------------------------------- MENU Section -------------------------------------------*/
+    .title-menu{
+        font-size: 2rem;
+    }
+    
+    .container-menu{
+        gap: 20px; 
+    }
+
+    /*------------------------------------------- BENEFICIOS Section -------------------------------------------*/
+    .title-beneficios{
+        font-size: 2rem;
+    }
+
+    .desc-beneficio h1{
+        font-size: 28px;
+        font-weight: 700;
+    }
+
+    .desc-beneficio p{
+        font-weight: 600;
+    }
+
+    .desc-beneficio i{
+        font-size: 45px;
+    }
+
+    /*------------------------------------------- SERVICE Section -------------------------------------------*/
+    .title-adocao{
+        font-size: 2rem;
+        max-width: 550px;
+    }
+
+    /*------------------------------------------- Footer Section -------------------------------------------*/
+    .container-footer{
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .redes a{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #FFF;
+    }
+
+    .redes i{
+        margin-right: 10px;
+    }
+
+    /*------------------------------------------- Modal Section -------------------------------------------*/
+    .sidebar{
+        width: 65%;
+    }
+
+    .container-mensagem{
+        top: 30px;
+        right: 10px;
+        padding: 15px 10px;
+    }
+
+    .desc-modal{
+        width: 180px;
+    }
+
+    .card-item{
+        padding: 1rem;
+        max-width: 700px;
+        gap: 30px;
+    }
+
+    .form-control{
+        width: 96%;
+    }
+
+    .title-final{
+        margin-left: 45px;
+    }
+
+    #container-mensagem {
+        top: 0;
+        right: 0;
+    }
 }
