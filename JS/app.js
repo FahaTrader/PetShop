@@ -170,7 +170,7 @@ function exibirProdutos() {
             <div class="card">
                 <div class="card-img"><img src="${produto.image}" alt="${produto.name}"></div>
                 <div class="card-info">
-                    <p class="text-title">${produto.name}</p>
+                    <p class="title-product">${produto.name}</p>
                 </div>
                 <div class="card-footer">
                     <span class="text-title">R$ ${produto.price.toFixed(2)}</span>

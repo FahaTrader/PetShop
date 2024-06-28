@@ -244,7 +244,23 @@
     }
     
     .container-menu{
+        display: flex;
         gap: 20px; 
+    }
+
+    #menu .card{
+        width: 230px;
+        height: 340px;
+        margin-top: 0;
+        margin-bottom: 10px;
+    }
+
+    .card-img img{
+        width: 100%;
+    }
+
+    .title-product{
+        font-size: 18px;
     }
 
     /*------------------------------------------- BENEFICIOS Section -------------------------------------------*/
