@@ -306,12 +306,12 @@
 
     /*------------------------------------------- Modal Section -------------------------------------------*/
     .sidebar{
-        width: 70%;
+        width: 75%;
     }
 
     .container-mensagem{
         top: 5px;
-        right: 5px;
+        right: 0;
         padding: 15px 10px;
     }
 
